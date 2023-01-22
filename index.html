@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Security</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Password Security Rating</h1>
+        <form>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" class="form-control">
+          </div>
+          <div class="form-group">
+            <button type="button" class="btn btn-primary" id="rate-password-btn">Rate Password</button>
+          </div>
+          <div class="form-group">
+            <label for="password-strength">Password Strength:</label>
+            <input type="text" id="password-strength" name="password-strength" class="form-group" readonly>
+          </div>
+          <div class="form-group">
+            <label for="cracking-time">Estimated Cracking Time:</label>
+            <input type="text" id="cracking-time" name="cracking-time" class="form-group" readonly>
+          </div>
+        </form>
+        <hr>
+        <h1>Password Generator</h1>
+        <form>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" id="include-numbers" name="include-numbers">
+              Include numbers
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" id="include-symbols" name="include-symbols">
+              Include symbols
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" id="include-uppercase" name="include-uppercase">
+              Include uppercase letters
+              </label>
+              </div>
+              <div class="form-group">
+              <label for="password-length">Minimum Length:</label>
+              <input type="number" id="password-length" name="password-length" min="8" value="12" class="form-control">
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-success" id="generate-password-btn">Generate Password</button>
+              </div>
+              <div class="form-group">
+              <label for="generated-password">Generated Password:</label>
+              <input type="text" id="generated-password" name="generated-password" class="form-control" readonly>
+              </div>
+              
+                </form>
+              </div>
+      
+</body>
+</html>
